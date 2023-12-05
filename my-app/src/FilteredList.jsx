@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropdownButton, MenuItem } from 'react-bootstrap';
+import { DropdownButton, DropdownItem, MenuItem } from 'react-bootstrap';
 import List from './List';
 
 class FilteredList extends Component {
@@ -33,9 +33,9 @@ class FilteredList extends Component {
       <div className="filter-list">
         <h1>Produce Search</h1>
         <DropdownButton id="typeDropdown" title={"Type"}>
-          <Dropdown.Item eventKey="All" onSelect={this.onFilter}>All</Dropdown.Item>
-          <Dropdown.Item eventKey="Fruit" onSelect={this.onFilter}>Fruit</Dropdown.Item>
-          <Dropdown.Item eventKey="Vegetables" onSelect={this.onFilter}>Vegetables</Dropdown.Item>
+          <DropdownItem eventKey="All" onSelect={this.onFilter}>All</DropdownItem>
+          <DropdownItem eventKey="Fruit" onSelect={this.onFilter}>Fruit</DropdownItem>
+          <DropdownItem eventKey="Vegetables" onSelect={this.onFilter}>Vegetables</DropdownItem>
         </DropdownButton>
 
         <input type="text" placeholder="Search" onChange={this.onSearch} />
