@@ -33,9 +33,9 @@ class FilteredList extends Component {
       <div className="filter-list">
         <h1>Produce Search</h1>
         <DropdownButton id="typeDropdown" title={"Type"}>
-          <MenuItem eventKey="All" onSelect={this.onFilter}>All</MenuItem>
-          <MenuItem eventKey="Fruit" onSelect={this.onFilter}>Fruit</MenuItem>
-          <MenuItem eventKey="Vegetables" onSelect={this.onFilter}>Vegetables</MenuItem>
+          <Dropdown.Item eventKey="All" onSelect={this.onFilter}>All</Dropdown.Item>
+          <Dropdown.Item eventKey="Fruit" onSelect={this.onFilter}>Fruit</Dropdown.Item>
+          <Dropdown.Item eventKey="Vegetables" onSelect={this.onFilter}>Vegetables</Dropdown.Item>
         </DropdownButton>
 
         <input type="text" placeholder="Search" onChange={this.onSearch} />
